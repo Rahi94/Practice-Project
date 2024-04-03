@@ -1,0 +1,28 @@
+[
+    {
+      "ID": 1001,
+      "Marks": 85,
+      "Subject": "Mathematics"
+    },
+    {
+      "ID": 1002,
+      "Marks": 78,
+      "Subject": "Physics"
+    },
+    {
+      "ID": 1003,
+      "Marks": 92,
+      "Subject": "Chemistry"
+    },
+    {
+      "ID": 1004,
+      "Marks": 65,
+      "Subject": "Biology"
+    },
+    {
+      "ID": 1005,
+      "Marks": 80,
+      "Subject": "Computer Science"
+    }
+  ]
+  

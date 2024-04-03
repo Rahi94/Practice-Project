@@ -1,7 +1,43 @@
 
 import './App.css'
+import { LineChart, Line, XAxis, YAxis } from 'recharts';
 
 function App() {
+
+  const myData = [
+    {
+      "ID": 1001,
+      Mathematics: 85,
+      Physics: 78,
+      Subject: "Mathematics"
+    },
+    {
+      "ID": 1002,
+      Mathematics: 89,
+      Physics: 88,
+      Subject: "Physics"
+    },
+    {
+      "ID": 1003,
+      Physics: 70,
+      Mathematics: 75,
+      Chemistry: 92,
+      Subject: "Chemistry"
+    },
+    {
+      "ID": 1004, Physics: 98,
+      Mathematics: 65,
+      Biology: 65,
+      Subject: "Biology"
+    },
+    {
+      "ID": 1005,
+      Physics: 74,
+      Mathematics: 95,
+      ComputerScience: 80,
+      Subject: "Computer Science"
+    }
+  ]
 
 
   return (
@@ -41,6 +77,14 @@ function App() {
         </div>
 
       </div>
+     
+     <LineChart width={600} height={500} data={myData}>
+        <Line type="monotone" dataKey={"Mathematics"} stroke="black"></Line>
+        <Line type="monotone" dataKey={"Physics"} stroke="green"></Line>
+        <XAxis dataKey={"ID"}></XAxis>
+        <YAxis dataKey={"Physics"}></YAxis>
+     </LineChart>
+
     </>
   )
 }
